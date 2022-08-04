@@ -1,0 +1,208 @@
+<!--
+<div class="house">
+<div class="sidebar">
+    <div class="logo-content">
+        <div class="logo">
+            <i class="bx bxl-c-plus-plus"></i>
+            <div class="logo-name">
+                CompanyName
+            </div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list"><li>
+                <i class='bx bx-search' ></i>
+                <input type="text" placeholder="search..">
+            </li>
+            <li>
+                <a href="#"><i class='bx bx-grid-alt'></i>
+                <span class="links_name">Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-user'></i>
+                <span class="links_name">User</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#"><i class='bx bx-chat'></i>
+                <span class="links_name">Messages</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="#"><i class='bx bx-pie-chart' ></i>
+                <span class="links_name">Anaytics</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#"><i class='bx bx-folder'></i>
+                <span class="links_name">FileManager</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#"><i class='bx bx-cart'></i>
+                <span class="links_name">Order</span>
+                </a>
+            </li>
+            <li>
+                <a href="#"><i class='bx bx-heart'></i>
+                <span class="links_name">Saved</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#"><i class='bx bx-cog'></i>
+                <span class="links_name">Setting</span>
+                </a>
+            </li>
+
+        </ul>
+        <div class="profile-content">
+            <div class="profile">
+                <div class="profile_details">
+                   <img src="profile.jpg" alt=""> 
+                </div>
+                <div class="name_job">
+                    <div class="name">Company</div>
+                    <div class="job">Web designer</div>
+                </div>
+                <i class='bx bx-log-out' id="log_out"></i>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+-->
+
+<nav class="navbar navbar-expand navbar-dark bg-dark px-2">
+
+</nav>
+
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus'></i>
+      <span class="logo_name">CodingLab</span>
+    </div>
+    <ul class="nav-links" >
+      <!--[ngClass]="{'nav-list-open' = sideNavStatus}"-->
+      <li>
+        <a href="#" *ngFor="let item of list">
+          <i class='bx bx-grid-alt' ></i>
+          <span class="link_name">Dashboard</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Category</a></li>
+        </ul>
+      </li>
+  <!--check below-->
+  <li>
+    <a href="#" *ngFor="let item of list">
+      <i class="{{item.icon}}" ></i>
+      <span class="link_name">{{item.name}</span>
+    </a>
+    <ul class="sub-menu blank">
+      <li><a class="link_name" href="#">{{item.name}</a></li>
+    </ul>
+  </li>
+
+  <!-- check above -->
+    
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Posts</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Posts</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Login Form</a></li>
+          <li><a href="#">Card Design</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name">Analytics</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Analytics</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-line-chart' ></i>
+          <span class="link_name">Chart</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Chart</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-plug' ></i>
+            <span class="link_name">Plugins</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Plugins</a></li>
+          <li><a href="#">UI Face</a></li>
+          <li><a href="#">Pigments</a></li>
+          <li><a href="#">Box Icons</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-compass' ></i>
+          <span class="link_name">Explore</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Explore</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-history'></i>
+          <span class="link_name">History</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">History</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">Setting</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Setting</a></li>
+        </ul>
+      </li>
+      <li>
+    <div class="profile-details">
+      <div class="profile-content">
+        <!--<img src="image/profile.jpg" alt="profileImg">-->
+      </div>
+      <div class="name-job">
+        <div class="profile_name">Prem Shahi</div>
+        <div class="job">Web Desginer</div>
+      </div>
+      <i class='bx bx-log-out' ></i>
+    </div>
+  </li>
+</ul>
+  </div>
+
+
+</body>
+

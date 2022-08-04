@@ -1,0 +1,21 @@
+nav{
+    background-color:#3B2F63;
+    height: 100%;
+    color: #c7c0de;
+}
+
+.side-nav-buttton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bx-menu {
+    font-size: 1.5rem;
+}
+
+.bx-menu:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 30%
+}

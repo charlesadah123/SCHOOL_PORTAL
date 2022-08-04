@@ -1,0 +1,27 @@
+
+
+
+
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">MUO</div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK 
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label> -->
+          <!-- NAVIGATION MENUS -->
+          <div class="menu">
+          
+            <li><a routerLink="/first-nav" routerLinkActive="active" ariaCurrentWhenActive="page">Login</a></li>
+            <li><a  routerLink="/second-nav" routerLinkActive="active" ariaCurrentWhenActive="page">Next</a></li>
+            <li><a a routerLink="/third-nav" routerLinkActive="active" ariaCurrentWhenActive="page">After</a></li>
+            <li><a a routerLink="/side-nav" routerLinkActive="active" ariaCurrentWhenActive="page">SideNav</a></li>
+            <li><a a routerLink="/heroku-nav" routerLinkActive="active" ariaCurrentWhenActive="page">Heroku</a></li>
+
+
+          </div>
+        </ul>
+    </nav>
+
+<router-outlet></router-outlet>
